@@ -7,6 +7,6 @@ A Serilog sink that sends events to Slack.
 <pre>
     Serilog.ILogger log = new LoggerConfiguration()
         .MinimumLevel.Verbose()
-        .WriteTo.Slack(webhookUrl: "https://xxx", channel: "xxx", userName: "xxx");
+        .WriteTo.Slack(webhookUrl: "https://xxxx", channel: "xxxx", userName: "xxxx");
         .CreateLogger();
 </pre>
