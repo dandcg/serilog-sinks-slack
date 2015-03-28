@@ -1,2 +1,12 @@
 # serilog-sinks-slack
-A sink for Serilog that writes events to Slack
+
+A Serilog sink that sends events to Slack.
+
+### Usage
+
+<pre>
+    Serilog.ILogger log = new LoggerConfiguration()
+        .MinimumLevel.Verbose()
+        .WriteTo.Slack(webhookUrl: "https://xxx", channel: "xxx", userName: "xxx", restrictedToMinimumLevel: logSlackLevel);
+        .CreateLogger();
+</pre>
